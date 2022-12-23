@@ -42,6 +42,15 @@ print(f"b: {b}")
 
 # Computing linear regression prediction
 def compute_model_output(x, w, b):
+    """
+    Computes the prediction of a linear model
+    Args:
+      x (ndarray (m,)): Data, m examples 
+      w,b (scalar)    : model parameters  
+    Returns
+      y (ndarray (m,)): target values
+    """
+    
     m = x.shape[0] # assigning sample size
     f_wb = np.zeros(m) # creating numpy array with value zero of size x
     for i in range(m):
