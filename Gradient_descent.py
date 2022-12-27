@@ -93,7 +93,7 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iters, cost_function, gradient
         if i % math.ceil(num_iters / 10) == 0:
             print(f"Iteration {i:4}: Cost {j_history[-1]:0.2e}",
                   f"dj_dw: {dj_dw: 0.3e}, dj_db: {dj_db: 0.3e}  ",
-                  f"w: {w: 0.3e}, b:{b: 0.5e}")
+                  f"w: {w: 0.3e}, b:{b: 0.5e}\n")
         
     return w, b, j_history, p_history #return w and J,w history for graphing
 
@@ -116,7 +116,7 @@ w_final, b_final, j_hist, p_hist = gradient_descent(x_train,
                                                     compute_gradient)
 
 
-print(f"\n(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})")
+print(f"\n(w,b) found by gradient descent: ({w_final:8.4f},{b_final:8.4f})\n")
 
 
 # plot cost versus iteration  
