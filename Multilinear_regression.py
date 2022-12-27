@@ -1,8 +1,8 @@
+# required libraries
 import math
 import copy
 import numpy as np
 import matplotlib.pyplot as plt
-
 
 # Data
 X_train = np.array([[2104, 5, 1, 45],
