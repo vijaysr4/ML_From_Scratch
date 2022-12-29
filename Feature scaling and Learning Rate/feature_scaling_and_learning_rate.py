@@ -1,13 +1,14 @@
 import numpy as np, copy, math
 import matplotlib.pyplot as plt
 
+# load dataset 
 def load_house_data():
     data = np.loadtxt('houses.txt', delimiter=',', skiprows=1)
     X = data[:, :4]
     y = data[:, 4]
     return (X, y)
 
-# load the dataset
+# call load dataset function
 X_train, y_train = load_house_data()
 X_features = ['size(sqft)','bedrooms','floors','age']
 
